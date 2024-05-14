@@ -37,3 +37,8 @@ require "nvchad.autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+-- treesitter for Linux
+require 'nvim-treesitter.install'.compilers = {'clang'}
+
+

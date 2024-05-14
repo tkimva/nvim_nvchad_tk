@@ -9,7 +9,7 @@ return {
 
   {
     "jose-elias-alvarez/null-ls.nvim",
-    ft = {"python"},
+    event = "VeryLazy",
     opts = function()
       return require "configs.null-ls"
     end,
@@ -27,10 +27,13 @@ return {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
-      "lua-language-server", "stylua",
-      "html-lsp", "css-lsp" , "prettier",
-      "pyright", "black", "mypy", "ruff",
-      "debugpy"
+        "lua-language-server", "stylua",
+        "html-lsp", "css-lsp" ,
+        "prettier", "pyright",
+        "black", "mypy",
+        "ruff", "debugpy",
+        "clangd", "clang-format",
+        "gopls", "rust-analyzer"
       },
     },
   },
@@ -39,8 +42,10 @@ return {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
-      "vim", "lua", "vimdoc",
-      "html", "css", "python"
+        "vim", "lua",
+        "vimdoc", "html",
+        "css", "python",
+        "c", "cpp", "c_sharp"
       },
     },
   },
