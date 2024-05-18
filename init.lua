@@ -40,5 +40,6 @@ end)
 
 -- treesitter for Linux
 require 'nvim-treesitter.install'.compilers = {"clang"}
+require 'nvim-treesitter.install'.prefer_git = true
 
 
